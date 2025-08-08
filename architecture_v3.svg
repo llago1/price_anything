@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <style>
+      .bg { fill: #f0f4f8; }
+      .loop-box { fill: #ffffff; stroke: #b0bec5; stroke-width: 1.5; rx: 10; ry: 10; }
+      .loop-title { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 18px; font-weight: bold; fill: #263238; }
+      .step-box { fill: #eceff1; stroke: #cfd8dc; stroke-width: 1; rx: 5; ry: 5; }
+      .step-text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 14px; fill: #37474f; }
+      .tech-text { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 12px; fill: #546e7a; font-style: italic; }
+      .arrow { fill: #78909c; }
+      .main-title { font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; font-size: 24px; font-weight: bold; fill: #000; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg"/>
+
+  <text x="400" y="40" text-anchor="middle" class="main-title">“万物价值”AR平台: 三大核心循环</text>
+
+  <!-- Data Loop -->
+  <g id="data-loop">
+    <rect x="50" y="80" width="700" height="140" class="loop-box"/>
+    <text x="400" y="105" text-anchor="middle" class="loop-title">循环一：数据循环 (The Data Loop)</text>
+    
+    <g class="step" id="contribute">
+      <rect x="70" y="130" width="120" height="50" class="step-box"/>
+      <text x="130" y="155" text-anchor="middle" class="step-text">① 贡献</text>
+    </g>
+    <g class="step" id="validate">
+      <rect x="250" y="130" width="120" height="50" class="step-box"/>
+      <text x="310" y="155" text-anchor="middle" class="step-text">② 验证</text>
+    </g>
+    <g class="step" id="integrate">
+      <rect x="430" y="130" width="120" height="50" class="step-box"/>
+      <text x="490" y="155" text-anchor="middle" class="step-text">③ 整合</text>
+    </g>
+    <g class="step" id="consume">
+      <rect x="610" y="130" width="120" height="50" class="step-box"/>
+      <text x="670" y="155" text-anchor="middle" class="step-text">④ 消费</text>
+    </g>
+
+    <path d="M195 155 L 245 155" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M375 155 L 425 155" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M555 155 L 605 155" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M730 155 C 760 155, 760 195, 400 195 C 40 195, 40 155, 70 155" stroke="#78909c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <text x="400" y="210" text-anchor="middle" class="tech-text">技术: SLAM, 3D Gaussian Splatting, IPFS, DID</text>
+  </g>
+
+  <!-- Value & Contribution Loop -->
+  <g id="value-loop">
+    <rect x="50" y="240" width="700" height="140" class="loop-box"/>
+    <text x="400" y="265" text-anchor="middle" class="loop-title">循环二：价值与贡献循环 (The Value &amp; Contribution Loop)</text>
+    
+    <g class="step" id="data-mining">
+      <rect x="70" y="290" width="120" height="50" class="step-box"/>
+      <text x="130" y="310" text-anchor="middle" class="step-text">① 数据挖矿</text>
+      <text x="130" y="328" text-anchor="middle" class="tech-text">(Data Mining)</text>
+    </g>
+    <g class="step" id="intelligence-mining">
+      <rect x="250" y="290" width="120" height="50" class="step-box"/>
+      <text x="310" y="310" text-anchor="middle" class="step-text">② 智能挖矿</text>
+      <text x="310" y="328" text-anchor="middle" class="tech-text">(Intelligence Mining)</text>
+    </g>
+    <g class="step" id="community-mining">
+      <rect x="430" y="290" width="120" height="50" class="step-box"/>
+      <text x="490" y="310" text-anchor="middle" class="step-text">③ 社区挖矿</text>
+      <text x="490" y="328" text-anchor="middle" class="tech-text">(Community Mining)</text>
+    </g>
+    <g class="step" id="value-distribution-dao">
+      <rect x="610" y="290" width="120" height="50" class="step-box"/>
+      <text x="670" y="310" text-anchor="middle" class="step-text">④ 价值分配</text>
+      <text x="670" y="328" text-anchor="middle" class="tech-text">(DAO Treasury)</text>
+    </g>
+
+    <path d="M195 315 L 245 315" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M375 315 L 425 315" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M555 315 L 605 315" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M730 315 C 760 315, 760 355, 400 355 C 40 355, 40 315, 70 315" stroke="#78909c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <text x="400" y="370" text-anchor="middle" class="tech-text">技术: Pluggable PoC, DAO, Bounty Platforms</text>
+  </g>
+
+  <!-- Governance Loop -->
+  <g id="governance-loop">
+    <rect x="50" y="400" width="700" height="140" class="loop-box"/>
+    <text x="400" y="425" text-anchor="middle" class="loop-title">循环三：治理循环 (The Governance Loop)</text>
+
+    <g class="step" id="propose">
+      <rect x="70" y="450" width="120" height="50" class="step-box"/>
+      <text x="130" y="475" text-anchor="middle" class="step-text">① 提案</text>
+    </g>
+    <g class="step" id="debate">
+      <rect x="250" y="450" width="120" height="50" class="step-box"/>
+      <text x="310" y="475" text-anchor="middle" class="step-text">② 辩论</text>
+    </g>
+    <g class="step" id="vote">
+      <rect x="430" y="450" width="120" height="50" class="step-box"/>
+      <text x="490" y="475" text-anchor="middle" class="step-text">③ 投票</text>
+    </g>
+    <g class="step" id="execute">
+      <rect x="610" y="450" width="120" height="50" class="step-box"/>
+      <text x="670" y="475" text-anchor="middle" class="step-text">④ 执行</text>
+    </g>
+
+    <path d="M195 475 L 245 475" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M375 475 L 425 475" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M555 475 L 605 475" stroke="#78909c" stroke-width="2" marker-end="url(#arrowhead)"/>
+    <path d="M730 475 C 760 475, 760 515, 400 515 C 40 515, 40 475, 70 475" stroke="#78909c" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+
+    <text x="400" y="530" text-anchor="middle" class="tech-text">技术: DAO Frameworks, On-chain/Off-chain Voting</text>
+  </g>
+
+</svg>
